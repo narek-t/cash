@@ -1,4 +1,21 @@
 block header
-
 	header.site-header
-		h1 Blank template for frontend developers
+		a.logo(href="#")
+			img(src="img/logo.png", alt="")
+		.site-header__inner.cf
+			nav.site-header__nav
+				ul
+					li
+						a(href="#") Проекты
+					li
+						a(href="#") Блог
+					li
+						a(href="#") Сотрудники
+					li
+						a(href="#") Контакты
+					li.current-menu-item
+						a(href="#") Личный кабинет
+			.search
+				.search__inner
+					input(type="text" placeholder="Поиск...")
+					span.close-search

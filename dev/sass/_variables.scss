@@ -1,4 +1,36 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+@font-face {
+    font-family: "OfficinaSerifBook";
+    src: url("../fonts/OfficinaSerifBook.eot");
+    src: url("../fonts/OfficinaSerifBook.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OfficinaSerifBook.woff") format("woff"),
+    url("../fonts/OfficinaSerifBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$serifbook: "OfficinaSerifBook";
+
+@font-face {
+    font-family: "OfficinaSansBold";
+    src: url("../fonts/OfficinaSansBold.eot");
+    src: url("../fonts/OfficinaSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OfficinaSansBold.woff") format("woff"),
+    url("../fonts/OfficinaSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$sansbold: "OfficinaSansBold";
+
+@font-face {
+    font-family: "OfficinaSansBook";
+    src: url("../fonts/OfficinaSansBook.eot");
+    src: url("../fonts/OfficinaSansBook.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OfficinaSansBook.woff") format("woff"),
+    url("../fonts/OfficinaSansBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$sansbook: "OfficinaSansBook";
+$transition: all .3s ease-in-out;

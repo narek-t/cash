@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAAhnkr4KzLpC2djb57Ci-FaLKbSmIlNc&amp;language=ru"></script>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body class="single">
+    <div class="all-wrapper">
+      <header class="site-header"><a href="#" class="logo"><img src="img/logo.png" alt=""/></a>
+        <div class="site-header__inner cf">
+          <nav class="site-header__nav">
+            <ul>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Сотрудники</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li class="current-menu-item"><a href="#">Личный кабинет</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <div class="search__inner">
+              <input type="text" placeholder="Поиск..."/><span class="close-search"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="container cf">
+          <div class="content-side single-project">
+            <div class="graphic-side single-project__col">
+              <div class="single-slider">
+                <div style="background-image: url(img/slick1.jpg)" class="single-slider__view">
+                  <iframe frameborder="0" src="" allowfullscreen="allowfullscreen" class="single-video"></iframe>
+                </div>
+                <div class="single-slider__thumbs">
+                  <div data-src="img/slick1.jpg" class="img-wrap"><img src="img/slick1.jpg" alt=""/></div>
+                  <div data-src="img/slick2.jpeg" class="img-wrap"><img src="img/slick2.jpeg" alt=""/></div>
+                  <div data-url="https://www.youtube.com/embed/2JWEH-jznrE" class="img-wrap video-thumb"><img src="img/slick1.jpg" alt=""/></div>
+                  <div data-src="img/slick3.jpeg" class="img-wrap"><img src="img/slick3.jpeg" alt=""/></div>
+                  <div data-url="https://www.youtube.com/embed/2JWEH-jznrE" class="img-wrap video-thumb"><img src="img/slick1.jpg" alt=""/></div>
+                  <div data-src="img/slick1.jpg" class="img-wrap"><img src="img/slick1.jpg" alt=""/></div>
+                  <div data-src="img/slick4.jpeg" class="img-wrap"><img src="img/slick4.jpeg" alt=""/></div>
+                </div>
+              </div>
+              <div class="single-map">
+                <p class="map-title">Место реализации:</p>
+                <script>
+                  function initMap() {
+                  var styles = [ { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [ { "color": "#444444" } ] }, { "featureType": "administrative.neighborhood", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "color": "#f2f2f2" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "visibility": "on" }, { "hue": "#ff0000" } ] }, { "featureType": "poi.attraction", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.business", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.government", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.medical", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.park", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.place_of_worship", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.school", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.sports_complex", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 45 } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "transit.station", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "color": "#46bcec" }, { "visibility": "on" } ] } ]
+                  	var uluru = {lat: 59.950132388440835, lng:  30.320420265197754};
+                  	var map = new google.maps.Map(document.getElementById('map'), {
+                  		zoom: 17,
+                  		center: uluru,
+                  		styles: styles
+                  	});
+                  	var marker = new google.maps.Marker({
+                  		position: uluru,
+                  		map: map
+                  	});
+                  }
+                  google.maps.event.addDomListener(window, 'load', initMap);
+                </script>
+                <div id="map" class="map-container"></div>
+              </div>
+            </div>
+            <div class="text-side single-project__col">
+              <h1 class="single-title">Lorem ipsum dolor sit amet consectetur</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+              <p>Excepteur siatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehennt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehennt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit</p>
+              <div class="invest-form">
+                <form>
+                  <p>Поддержать проект 
+                    <input type="text" class="invest-input"/>руб.
+                  </p>
+                  <input type="submit" value="Отправить" class="btn btn--white-text btn--submit"/>
+                </form>
+              </div>
+            </div>
+          </div>
+          <aside style="background-image: url(img/projects-bg.jpg);" class="sidebar">
+            <div class="sidebar__inner">
+              <div class="single-sidebar">
+                <div class="single-sidebar__section aligned">
+                  <p class="collected"><span class="heading">Собрано: </span><span class="money">20 000 </span>руб.</p>
+                </div>
+                <div class="single-sidebar__section aligned info">
+                  <ul>
+                    <li><span class="heading">Необходимо: </span><span class="money">40 000 </span>руб.</li>
+                    <li><span class="heading">Осталось: </span><span class="money">100 </span>дней.</li>
+                    <li><span class="heading">Куплено: </span><span class="money">500 </span>акций.</li>
+                    <li><span class="heading">Создан: </span><span class="money">20.12.2016</span></li>
+                  </ul>
+                </div>
+                <div class="single-sidebar__section reward aligned"><span class="heading">Вознаграждение:</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="single-sidebar__section aligned author">
+                  <div class="author__inner cf">
+                    <div class="ava-side"><img src="img/emp1.jpg" alt=""/></div>
+                    <div class="description-side"><span class="heading">Автор проекта:</span>
+                      <p class="author-name">Краб Креветкович</p>
+                      <ul class="author-contacts">
+                        <li class="tel"><a href="tel:+7 (987) 654-32-10">+7 (987) 654-32-10</a></li>
+                        <li class="mail"><a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                        <li class="website"><a href="www.website.com" target="_blank">www.website.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-sidebar__section aligned"><a href="#" class="return">ВСЕ ПРОЕКТЫ</a></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="copyright">
+          <p>© Cash Free, 2016. <a href="#">Политика конфиденциальности.</a> 
+            Разработка сайта: <a href="#" class="madein">Beluga Labs </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

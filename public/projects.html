@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAAhnkr4KzLpC2djb57Ci-FaLKbSmIlNc&amp;language=ru"></script>
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>Document</title>
   </head>
@@ -140,15 +141,48 @@
           </div>
           <aside style="background-image: url(img/projects-bg.jpg)" class="sidebar">
             <div class="sidebar__inner">
-              <h2 class="sidebar-title">Проекты</h2>
-              <ul class="sidebar__categories">
-                <li>
-                  <p class="heading">категории<span class="cat-arrow"></span></p>
-                  <ul class="subcat-list">
-                    <li>Категория 1</li>
-                  </ul>
-                </li>
-              </ul>
+              <div class="projects__sidebar">
+                <h2 class="sidebar-title">Проекты</h2>
+                <form>
+                  <div class="sidebar__filter">
+                    <div class="filter-col">
+                      <p class="heading">категории</p>
+                      <ul class="cat-filter">
+                        <li>
+                          <label>
+                            <input type="checkbox" name="cat[]"/><span class="check"></span>Категория 1
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" name="cat[]"/><span class="check"></span>Категория 2
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" name="cat[]"/><span class="check"></span>Категория 3
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" name="cat[]"/><span class="check"></span>Категория 4
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="checkbox" name="cat[]"/><span class="check"></span>Категория 5
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="filter-col">
+                      <p class="heading">Стоимость</p>
+                    </div>
+                    <div class="filter-col"><a href="#" class="heading filter--link">Остаток</a></div>
+                    <div class="filter-col"><a href="#" class="heading filter--link">Время</a></div>
+                  </div>
+                </form>
+              </div>
             </div>
           </aside>
         </div>

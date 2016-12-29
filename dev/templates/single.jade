@@ -1,0 +1,106 @@
+extends _layout
+block vars
+	- var bodyClass = 'single'
+block content
+	main.main-content
+		.container.cf
+			.content-side.single-project
+				.graphic-side.single-project__col
+					.single-slider
+						.single-slider__view(style="background-image: url(img/slick1.jpg)")
+							iframe.single-video(frameborder="0" src="" allowfullscreen)
+						.single-slider__thumbs
+							.img-wrap(data-src="img/slick1.jpg")
+								img(src="img/slick1.jpg", alt="")
+							.img-wrap(data-src="img/slick2.jpeg")
+								img(src="img/slick2.jpeg", alt="")
+							.img-wrap.video-thumb(data-url="https://www.youtube.com/embed/2JWEH-jznrE")
+								img(src="img/slick1.jpg", alt="")
+							.img-wrap(data-src="img/slick3.jpeg")
+								img(src="img/slick3.jpeg", alt="")
+							.img-wrap.video-thumb(data-url="https://www.youtube.com/embed/2JWEH-jznrE")
+								img(src="img/slick1.jpg", alt="")
+							.img-wrap(data-src="img/slick1.jpg")
+								img(src="img/slick1.jpg", alt="")
+							.img-wrap(data-src="img/slick4.jpeg")
+								img(src="img/slick4.jpeg", alt="")
+					.single-map
+						p.map-title Место реализации:
+						script.
+							function initMap() {
+							var styles = [ { "featureType": "administrative", "elementType": "labels.text.fill", "stylers": [ { "color": "#444444" } ] }, { "featureType": "administrative.neighborhood", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "administrative.land_parcel", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "landscape", "elementType": "all", "stylers": [ { "color": "#f2f2f2" } ] }, { "featureType": "poi", "elementType": "all", "stylers": [ { "visibility": "on" }, { "hue": "#ff0000" } ] }, { "featureType": "poi.attraction", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.business", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.government", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.medical", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.park", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.place_of_worship", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.school", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "poi.sports_complex", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "road", "elementType": "all", "stylers": [ { "saturation": -100 }, { "lightness": 45 } ] }, { "featureType": "road.highway", "elementType": "all", "stylers": [ { "visibility": "simplified" } ] }, { "featureType": "road.arterial", "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] }, { "featureType": "road.local", "elementType": "all", "stylers": [ { "visibility": "on" } ] }, { "featureType": "transit", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "transit.station", "elementType": "all", "stylers": [ { "visibility": "off" } ] }, { "featureType": "water", "elementType": "all", "stylers": [ { "color": "#46bcec" }, { "visibility": "on" } ] } ]
+								var uluru = {lat: 59.950132388440835, lng:  30.320420265197754};
+								var map = new google.maps.Map(document.getElementById('map'), {
+									zoom: 17,
+									center: uluru,
+									styles: styles
+								});
+								var marker = new google.maps.Marker({
+									position: uluru,
+									map: map
+								});
+							}
+							google.maps.event.addDomListener(window, 'load', initMap);
+						.map-container#map
+				.text-side.single-project__col
+					h1.single-title Lorem ipsum dolor sit amet consectetur
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+					p Excepteur siatis et quasi architecto beatae vitae dicta sunt explicabo. 
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehennt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehennt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+					.invest-form
+						form
+							p Поддержать проект 
+								input.invest-input(type="text") 
+								| руб.
+							input.btn.btn--white-text.btn--submit(type="submit" value="Отправить")
+			aside.sidebar(style="background-image: url(img/projects-bg.jpg);")
+				.sidebar__inner
+					.single-sidebar
+						.single-sidebar__section.aligned
+							p.collected
+								span.heading Собрано: 
+								span.money 20 000 
+								| руб.
+						.single-sidebar__section.aligned.info
+							ul
+								li
+									span.heading Необходимо: 
+									span.money 40 000 
+									| руб.
+								li
+									span.heading Осталось: 
+									span.money 100 
+									| дней.
+								li
+									span.heading Куплено: 
+									span.money 500 
+									| акций.
+								li
+									span.heading Создан: 
+									span.money 20.12.2016
+
+						.single-sidebar__section.reward.aligned
+							span.heading Вознаграждение:
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						.single-sidebar__section.aligned.author
+							.author__inner.cf
+								.ava-side
+									img(src="img/emp1.jpg", alt="")
+								.description-side
+									span.heading Автор проекта:
+									p.author-name Краб Креветкович
+									ul.author-contacts
+										li.tel
+											a(href="tel:+7 (987) 654-32-10") +7 (987) 654-32-10
+										li.mail
+											a(href="mailto:mail@mail.com") mail@mail.com
+										li.website
+											a(href="www.website.com" target="_blank") www.website.com
+						.single-sidebar__section.aligned
+							a.return(href="#") ВСЕ ПРОЕКТЫ
+
+
+
+
+block inlineScripts

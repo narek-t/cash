@@ -99,14 +99,52 @@ block content
 
 			aside.sidebar(style="background-image: url(img/projects-bg.jpg)")
 				.sidebar__inner
-					h2.sidebar-title Проекты
-					ul.sidebar__categories
-						li
-							p.heading категории
-								span.cat-arrow
-							ul.subcat-list
-								li
-									Категория 1
+					.projects__sidebar
+						h2.sidebar-title Проекты
+						form
+							.sidebar__filter
+								.filter-col
+									p.heading категории
+									ul.cat-filter
+										li
+											label
+
+												input(type="checkbox" name="cat[]")
+												span.check
+												| Категория 1
+										li
+											label
+												
+												input(type="checkbox" name="cat[]")
+												span.check
+												| Категория 2
+										li
+											label
+												
+												input(type="checkbox" name="cat[]")
+												span.check
+												| Категория 3
+										li
+											label
+												
+												input(type="checkbox" name="cat[]")
+												span.check
+												| Категория 4
+										li
+											label
+												
+												input(type="checkbox" name="cat[]")
+												span.check
+												| Категория 5
+								.filter-col
+									p.heading Стоимость
+
+								.filter-col
+									a.heading.filter--link(href="#") Остаток
+
+								.filter-col
+									a.heading.filter--link(href="#") Время
+
 
 
 

@@ -99,53 +99,25 @@ block content
 
 			aside.sidebar(style="background-image: url(img/projects-bg.jpg)")
 				.sidebar__inner
-					.projects__sidebar
-						h2.sidebar-title Проекты
-						form
-							.sidebar__filter
-								.filter-col
-									p.heading категории
-									ul.cat-filter
-										li
-											label
-
-												input(type="checkbox" name="cat[]")
-												span.check
-												| Категория 1
-										li
-											label
-												
-												input(type="checkbox" name="cat[]")
-												span.check
-												| Категория 2
-										li
-											label
-												
-												input(type="checkbox" name="cat[]")
-												span.check
-												| Категория 3
-										li
-											label
-												
-												input(type="checkbox" name="cat[]")
-												span.check
-												| Категория 4
-										li
-											label
-												
-												input(type="checkbox" name="cat[]")
-												span.check
-												| Категория 5
-								.filter-col
-									p.heading Стоимость
-
-								.filter-col
-									a.heading.filter--link(href="#") Остаток
-										span.arr
-
-								.filter-col
-									a.heading.filter--link.active(href="#") Время
-										span.arr
+					.my-projects__sidebar
+						h2.sidebar-title Профиль
+						ul.my-sidebar__list
+							li
+								a(href="#")
+									span.heading Мои проекты
+							li.current-menu-item
+								a(href="#")
+									span.heading Мои Инвестиции
+							li
+								a(href="#")
+									span.heading Выход
+						.my-info
+							.info-item 50 проектов открыто
+							.info-item 15 инвестиций
+							.info-item 250 000 руб вложено
+							.info-item 450 000 руб собрано
+							.info-item lorem ipsum
+							
 
 
 
